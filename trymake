@@ -1,0 +1,7 @@
+#!/bin/bash
+
+while [ $(pgrep -c make) -gt 0 ]
+do
+    sleep 10m
+done
+notify-send -i dialog-ok -u critical "Your Making stuff is completed. $(date +"%F %R")"
